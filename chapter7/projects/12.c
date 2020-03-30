@@ -8,22 +8,23 @@ int main(int argc, char const *argv[])
 
 	printf("Enter an expression: \n");
 	scanf("%f", &total);
+
 	ch = getchar();
 
 	while(ch != '\n'){
 		switch(ch){
-			case '+' :
+			case '+':
+				scanf("%f", &number);
 				total += number;
-				ch = getchar();
 				break;
 
-			case '*' :
+			case '*':
+				scanf("%f", &number);
 				total *= number;
-				ch = getchar();
 				break;
 
 			default:
-				printf("Invalid\n");
+				//printf("Invalid\n");
 				continue;
 		}
 	}
