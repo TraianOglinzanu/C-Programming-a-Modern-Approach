@@ -9,7 +9,7 @@ int main(void)
 
     twenty = amount / 20;
     amount = amount - (twenty * 20);
-    printf("\n$20 bills: %d\n", twenty);
+    printf("$20 bills: %d\n", twenty);
 
  
     ten = amount / 10;
@@ -19,11 +19,11 @@ int main(void)
 
     five = amount / 5; 
     amount = amount - (five * 5);
-    printf(" $5 bills: %d\n", five);
+    printf("$5 bills: %d\n", five);
 
 
     one = amount / 1; 
-    printf(" $1 bills: %d\n\n", one);   
+    printf("$1 bills: %d\n", one);   
 
     return 0;
 }
