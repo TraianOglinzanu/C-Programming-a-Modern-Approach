@@ -2,14 +2,16 @@
 
 int main(int argc, char const *argv[])
 {
-	int number;
+	int number, reverse;
 
 	printf("Enter a two-digit number: ");
 	scanf("%d", &number);
 
-	int first = number % 10;
-	int second = (number /= 10);
-
-	printf("The reversal is: %d%d\n", first,second);
+	while(number!=0){
+		int digit = number % 10;
+		reverse = (reverse*10 + digit);
+		number /= 10;
+	}
+	printf("The reversal is: %d\n", reverse);
 	return 0;
 }
