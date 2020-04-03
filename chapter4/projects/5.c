@@ -6,7 +6,7 @@ int main(int argc, char const *argv[])
 	second_sum, total;
 
 	printf("Enter all UPC digits: \n");
-	scanf("%d%d%d%d%d%d%d%d%d%d%d", &d, &i1, &i2, &i3, &i4, 
+	scanf("%1d%1d%1d%1d%1d%1d%1d%1d%1d%1d%1d", &d, &i1, &i2, &i3, &i4, 
 		&i5, &j1, &j2, &j3, &j4, &j5);
 
 	first_sum = d + i2 + i4 + j1 + j3 + j5;
