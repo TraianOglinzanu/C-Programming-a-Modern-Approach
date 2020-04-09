@@ -19,22 +19,22 @@ int main(int argc, char const *argv[])
 		}
 
 		if(y2 < y1){
-            m1 = m2;
-            d1 = d2;
-            y1 = y2;
+           		m1 = m2;
+            		d1 = d2;
+            		y1 = y2;
 
-        }else if(y1 == y2 && m2 < m1){
-        	m1 = m2;
-            d1 = d2;
-            y1 = y2;
+		}else if(y1 == y2 && m2 < m1){
+        		m1 = m2;
+            		d1 = d2;
+            		y1 = y2;
 
-        }else if(y1 == y2 && m1 == m2 && d2 < d1){	
-        	m1 = m2;
-            d1 = d2;
-            y1 = y2; 
+        	}else if(y1 == y2 && m1 == m2 && d2 < d1){	
+        		m1 = m2;
+            		d1 = d2;
+            		y1 = y2; 
 
-        }else
-        	break;
+       		}else
+        		break;
 
 	}
 	printf("%d/%d/%d is the earliest date\n",m1,d1,y1);
