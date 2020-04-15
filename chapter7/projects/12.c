@@ -3,8 +3,8 @@
 
 int main(int argc, char const *argv[])
 {
-	float number = 0;
-	float total = 0;
+	float number = 0.0f;
+	float total = 0.0f;
 	char ch;
 
 	printf("Enter an expression: ");
