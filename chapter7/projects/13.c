@@ -11,9 +11,9 @@ int main(int argc, char const *argv[])
 	word = getchar();
 
 	while(word != '\n'){
-		if(word != ' '){
+		if(word != ' '){ //if not end of word
 			c++;
-			if(w == 0){
+			if(w == 0){ //if word over
 				w++;
 			}
 		}
