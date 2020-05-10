@@ -1,67 +1,77 @@
 #include <stdio.h>
+#include <ctype.h>
 
-int main(void)
+#define LENGTH 15
+
+int main(int argc, char const *argv[])
 {
     char ch;
+    char number[LENGTH];
+
     printf("Enter phone number: ");
 
     ch = getchar();
 
-    while (ch!='\n') {
+    for(int i = 0;ch != '\n' && i < LENGTH; i++) {
 
-        switch (ch) {
+        switch (toupper(ch)) {
             case 'A': 
             case 'B': 
             case 'C':
-                printf("2");
+                number[i] = '2';
                 break;
                 
             case 'D': 
             case 'E': 
             case 'F': 
-                printf("3");
+                number[i] = '3';
                 break;
                 
             case 'G': 
             case 'H': 
             case 'I': 
-                printf("4");
+                number[i] = '4';
                 break;
                 
             case 'J': 
             case 'K': 
             case 'L': 
-                printf("5");
+                number[i] = '5';
                 break;
                 
             case 'M': 
             case 'N': 
             case 'O': 
-                printf("6");
+                number[i] = '6';
                 break;
                 
             case 'P': 
             case 'R': 
             case 'S': 
-                printf("7");
+                number[i] = '7';
                 break;
                 
             case 'T': 
             case 'U': 
             case 'V': 
-                printf("8");
+                number[i] = '8';
                 break;
                 
             case 'W': 
             case 'X': 
             case 'Y': 
-                printf("9");
+                number[i] = '9';
                 break;
                 
             default:
-                printf(" ");
+                number[i] = ch;
                 break;
         }
     }
+    printf("In numeric form: ");
+    for(int i = 0; i<LENGTH; i++){
+    	printf("%c", number[i]);
+    }
+
     return 0;
 }
