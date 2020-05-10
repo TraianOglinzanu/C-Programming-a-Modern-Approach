@@ -6,7 +6,9 @@
 int main(int argc, char const *argv[])
 {
     char ch;
-    char number[LENGTH];
+    char number[LENGTH] = {0};
+
+    int length;
 
     printf("Enter phone number: ");
 
@@ -67,9 +69,10 @@ int main(int argc, char const *argv[])
                 number[i] = ch;
                 break;
         }
+        length++;
     }
     printf("In numeric form: ");
-    for(int i = 0; i<LENGTH; i++){
+    for(int i = 0; i<length; i++){
     	printf("%c", number[i]);
     }
 
