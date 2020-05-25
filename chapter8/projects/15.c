@@ -15,15 +15,20 @@ int main(int argc, char const *argv[])
 		
 	}
 
-	while(ch != '\n'){
-		message[i++] = ch;
-	}
-	message[i++] = '\0';
-
 	printf("Enter shift amount (1 - 25): ");
 	scanf("%d", &n);
 
+	for (i = 0; i < message_length - 1 && message[i] != '\0'; i++) {
+		ch = message[i];
+		if (ch >= 'A' && ch <= 'Z')
+			printf("%c", ((ch - 'A') + n) % 26 + 'A');
+		else if (ch >= 'a' && ch <= 'z')
+			printf("%c", ((ch - 'a') + n) % 26 + 'a');
+		else
+			printf("%c", ch);
+	}
 
+	printf("\n");
 
 	return 0;
 }
