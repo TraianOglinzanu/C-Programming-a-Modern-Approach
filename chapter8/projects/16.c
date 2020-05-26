@@ -33,8 +33,8 @@ int anagram(char word_one[], char word_two[]){
 
 int main(int argc, char const *argv[])
 {
-	char word_one[];
-	char word_two[];
+	char word_one[100];
+	char word_two[100];
 
 	printf("Enter first word: ");
 	fgets(word_one);
