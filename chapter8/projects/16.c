@@ -42,7 +42,7 @@ int main(int argc, char const *argv[])
 	printf("Enter second word: ");
 	fgets(word_two);
 
-	if(check_anagram(word_one, word_two)){
+	if(anagram(word_one, word_two)){
 		printf("The words are anagrams");
 	}else{
 		printf("The words are not anagrams");
