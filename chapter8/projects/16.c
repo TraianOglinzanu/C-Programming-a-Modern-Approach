@@ -9,8 +9,26 @@ int anagram(char word_one[], char word_two[]){
 
 	int i = 0;
 
-	
+	while(word_one[i] != '\0'){
+		letter_one[word_one[i] - 'a']++;
+		i++;
+	}
 
+	int i = 0;
+
+	while(word_two[i] != '\0'){
+		letter_two[word_two[i] - 'a']++;
+		i++;
+	}
+
+	//compare to see if anagram or not
+
+	for(i = 0; i < 26; i++){
+		if(letter_one[i] != letter_two[i]){
+			return 0;
+		}
+	}
+	return 1;
 }
 
 int main(int argc, char const *argv[])
@@ -29,6 +47,5 @@ int main(int argc, char const *argv[])
 	}else{
 		printf("The words are not anagrams");
 	}
-	
 	return 0;
 }
