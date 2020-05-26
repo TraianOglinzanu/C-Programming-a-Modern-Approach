@@ -14,7 +14,7 @@ int anagram(char word_one[], char word_two[]){
 		i++;
 	}
 
-	int i = 0;
+	i = 0;
 
 	while(word_two[i] != '\0'){
 		letter_two[word_two[i] - 'a']++;
