@@ -1,4 +1,4 @@
-#include <stido.h>
+#include <stdio.h>
 #include <ctype.h>
 #include <stdbool.h>
 
