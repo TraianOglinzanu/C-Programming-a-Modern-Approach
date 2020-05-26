@@ -7,17 +7,8 @@ int anagram(char word_one[], char word_two[]){
 	int letter_one[26] = {0};
 	int letter_two[26] = {0};
 
-	printf("Enter the first word: ");
-	ch = getchar();
-	for(int i = 0; ch != '\n' && i < 30; i++){
-		letter[toupper(ch) - 'A']++;
-	}
+	int i = 0;
 
-	printf("Enter the second word: ");
-	ch = getchar();
-	for(int i = 0; ch != '\n' && i < 30; i++){
-		letter[toupper(ch) - 'A']--;
-	}
 	
 
 }
