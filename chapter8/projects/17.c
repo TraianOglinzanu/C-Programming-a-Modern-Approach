@@ -22,5 +22,13 @@ int main(int argc, char const *argv[])
 		printf("\n");
 	}
 
+	column = i / 2;
+	row = 0;
+	int squared = (i*i);
+
+	for(j = 0; j < squared; j++){
+		square[row][column] = j;
+	}
+
 	return 0;
 }
