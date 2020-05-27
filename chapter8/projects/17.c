@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
 	int sqaure[i][i];
 
 	printf("This program createst a magic square of a specified size. \n");
-	printf("The size must be an odd number between 1 and 99. \n");
+	printf("The size must be an odd number between 1 and 99.\n");
 	printf("Enter size of magic square: ");
 	scanf("%d", &i);
 
@@ -28,6 +28,13 @@ int main(int argc, char const *argv[])
 
 	for(j = 0; j < squared; j++){
 		square[row][column] = j;
+	}
+
+	for(row = 0; row < i; row++){
+		for (column = 0; column < i; column++){ 
+			printf("%2d ", square[row][column]);
+		}
+		printf("\n");
 	}
 
 	return 0;
