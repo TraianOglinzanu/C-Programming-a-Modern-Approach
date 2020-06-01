@@ -9,3 +9,7 @@ int main(int argc, char const *argv[])
 	
 	return 0;
 }
+
+void selection_sort(int array[], int n) {
+	
+}	
