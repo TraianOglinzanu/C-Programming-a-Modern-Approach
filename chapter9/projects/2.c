@@ -2,7 +2,7 @@
 
 int main(void){
   
-  float get_tax(float income);
+  float get_tax(int array[], int c);
   
  
   return 0;
