@@ -11,11 +11,12 @@ int main(int argc, char const *argv[])
 
 	selection(a,c);
     
-    printf("Sorted list:");
-    for (i = 0; i < c; i++) {
-        printf(" %d", array[i]);
-    }
-    printf("\n");
+    	printf("Sorted list:");
+    	for (i = 0; i < c; i++) {
+        	printf(" %d", array[i]);
+    	}
+	
+    	printf("\n");
 	
 	return 0;
 }
